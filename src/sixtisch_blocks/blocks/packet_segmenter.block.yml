@@ -1,0 +1,39 @@
+id: packet_segmenter
+label: Packet Segmenter
+flags: [python]
+file_format: 1
+
+parameters:
+  - id: access_code
+    label: Access Code
+    dtype: string
+    default: '1001000001001110'
+
+  - id: tag_name
+    label: Tag Name
+    dtype: string
+    default: 'Sync Word'
+
+  - id: threshold
+    label: Threshold
+    dtype: int
+    default: 0
+
+  - id: channel
+    label: Channel
+    dtype: string
+    defaul: "default"
+
+inputs:
+  - domain: stream
+    dtype: byte
+
+outputs:
+  - domain: stream
+    dtype: byte
+
+templates:
+  imports: |
+    from sixtisch_blocks.packet_segmenter import PacketSegmenter
+  make: |
+    PacketSegmenter(${access_code}, ${tag_name}, ${threshold}, ${channel})

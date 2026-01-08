@@ -1,0 +1,32 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# GRC backup files
+*.grc~
+*.bak
+
+# Build / object files
+*.o
+*.so
+*.a
+*.out
+
+# Logs and temp
+*.log
+*.tmp
+*.swp
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Data and binary dumps
+*.wav
+*.bin
+*.iq
+*.raw
+
+# Virtual environments
+venv/
