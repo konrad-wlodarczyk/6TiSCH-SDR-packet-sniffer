@@ -1,5 +1,4 @@
 MANIFEST.in
-README.md
 setup.py
 src/6TiSCH_packet_sniffer.egg-info/PKG-INFO
 src/6TiSCH_packet_sniffer.egg-info/SOURCES.txt
@@ -7,6 +6,4 @@ src/6TiSCH_packet_sniffer.egg-info/dependency_links.txt
 src/6TiSCH_packet_sniffer.egg-info/top_level.txt
 src/sixtisch_blocks/__init__.py
 src/sixtisch_blocks/packet_segmenter.py
-src/sixtisch_blocks/packet_tagger.py
 src/sixtisch_blocks/blocks/packet_segmenter.block.yml
-src/sixtisch_blocks/blocks/packet_tagger.block.yml

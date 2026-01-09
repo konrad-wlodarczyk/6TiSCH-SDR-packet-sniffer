@@ -4,6 +4,7 @@ import argparse
 from PyQt5 import Qt
 from grc.main_packet_sniffer import main_packet_sniffer
 
+
 def main():
     parser = argparse.ArgumentParser(description="6TiSCH Packet Sniffer")
     parser.add_argument("-t", "--time", type=float, default=0,
